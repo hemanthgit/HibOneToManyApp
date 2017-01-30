@@ -19,12 +19,12 @@ public class Phone {
 	private String phoneType;
 	
 	@Column(name = "PHONE_NUM", nullable = false)
-	private String phoneNumber;
+	private Integer phoneNumber;
 
 	public Phone() {
 	}
 
-	public Phone(String phoneType, String phoneNumber) {
+	public Phone(String phoneType, Integer phoneNumber) {
 		this.phoneType = phoneType;
 		this.phoneNumber = phoneNumber;
 	}
@@ -45,11 +45,11 @@ public class Phone {
 		this.phoneType = phoneType;
 	}
 	
-	public String getPhoneNumber() {
+	public Integer getPhoneNumber() {
 		return this.phoneNumber;
 	}
 
-	public void setPhoneNumber(String phoneNumber) {
+	public void setPhoneNumber(Integer phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 
