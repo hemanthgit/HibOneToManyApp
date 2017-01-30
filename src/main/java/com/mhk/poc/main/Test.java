@@ -15,6 +15,7 @@ public class Test {
 	public static void main(String[] args) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		try {
+			/*Loading Data*/
 			Student student = (Student)session.load(Student.class, 1l);
 			System.out.println(student);
 			
@@ -24,6 +25,7 @@ public class Test {
 				System.out.println(phone.getPhoneNumber() + phone.getPhoneType());
 			}
 			
+			/*Inserting  Data*/
 			Transaction transaction = session.beginTransaction();
 			Phone phone1 = new Phone();
 			phone1.setPhoneNumber(128);
