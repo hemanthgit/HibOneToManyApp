@@ -28,7 +28,7 @@ public class Test {
 			/*Inserting  Data*/
 			Transaction transaction = session.beginTransaction();
 			Phone phone1 = new Phone();
-			phone1.setPhoneNumber(128);
+			phone1.setPhoneNumber(01234);
 			phone1.setPhoneType("Apple");
 			
 			Phone phone2 = new Phone();
