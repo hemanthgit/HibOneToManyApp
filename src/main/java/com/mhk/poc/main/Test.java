@@ -11,6 +11,7 @@ import com.mhk.poc.model.Phone;
 import com.mhk.poc.model.Student;
 import com.mhk.poc.util.HibernateUtil;
 
+// Test
 public class Test {
 	public static void main(String[] args) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
