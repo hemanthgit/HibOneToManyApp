@@ -12,6 +12,8 @@ import com.mhk.poc.model.Student;
 import com.mhk.poc.util.HibernateUtil;
 
 // Test
+//Spring Batch Integration has been a sub module of the Spring Batch Admin project now for a few years. It provides functionality to better integrate the capabilities provided in Spring Integration with Spring Batch. Specific functionality includes:
+
 public class Test {
 	public static void main(String[] args) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
